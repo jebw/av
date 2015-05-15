@@ -37,6 +37,7 @@ module Av
           when 270
             add_output_param vf: 'transpose=2'
         end
+        add_output_param :'metadata:s:v:0', 'rotate=0' # Set rotation metadata to 0
         self
       end
     end
